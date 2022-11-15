@@ -41,6 +41,7 @@ body {
     flex-direction: column;
     border-radius: 15px;
     padding: 1.6rem 1.3rem;
+    justify-content: space-between;
     gap: 1rem;
 
 }
@@ -54,7 +55,7 @@ body {
 }
 
 h1{
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 }
 
 p{
@@ -82,6 +83,21 @@ button{
     color: var(--Medium-Grey) ;
     cursor: pointer;
 
+}
+
+.btn-submit:hover{
+    color: var(--Orange);
+    background-color: var(--white);
+}
+
+.numbers:focus{
+    color: var(--white);
+    background-color:  var(--Light-Grey);
+}
+
+.numbers:hover{
+    color: var(--white);
+    background-color: var(--Orange);
 }
 
 .btn-submit{
@@ -125,5 +141,15 @@ h2{
 
 .appreciate{
     text-align: center;
+   
+}
+
+@media (min-width:600px){
+    .card{
+        height: 417px;
+        width: 413px;
+    }
+   
+
 }
 
