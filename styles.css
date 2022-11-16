@@ -158,6 +158,8 @@ h2{
     padding: .5em;
     border-radius: 50px;
     margin-bottom: 1.5rem;
+    width: 12rem;
+    text-align: center;
 }
 
 .appreciate{
