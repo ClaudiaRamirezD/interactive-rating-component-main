@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +13,39 @@
 </head>
 
 <body>
-  <main class="card">
-    <img class="star" src="/images/icon-star.svg" alt="icon-star">
-    <h1> How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!</p>
-    <ul class="rating">
-      <li><button class="btn1 numbers">1</button></li>
-      <li><button class="btn2 numbers">2</button></li>
-      <li><button class="btn3 numbers">3</button></li>
-      <li><button class="btn4 numbers">4</button></li>
-      <li><button class="btn5 numbers">5</button></li>
-    </ul>
-    <a class="btn-submit" href="/thank-you.html">SUBMIT</a>
+  <main>
+    <div class="card main-card">
+      <img class="star" src="/images/icon-star.svg" alt="" aria-hidden=“true”>
+      <h1> How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <form action="#">
+        <fieldset class="rating">
+          <input type="radio" id="btn1" name="numbers" class="numbers" value="1">
+          <label for="label-1" class="label1 label">1</label>
+          <input type="radio" id="btn2" name="numbers" class="numbers" value="2">
+          <label for="label-2" class="label2 label">2</label>
+          <input type="radio" id="btn3" name="numbers" class="numbers" value="3">
+          <label for="label-3" class="label3 label">3</label>
+          <input type="radio" id="btn4" name= "numbers" class="numbers" value="4">
+          <label for="label-4" class="label4 label">4</label>
+          <input type="radio" id="btn5" name="numbers" class="numbers" value="5">
+          <label for="label-5" class="label5 label">5</label>
+        </fieldset>
+        <button type="submit" class="btn">SUBMIT</button>
+      </form>
+    </div>
+    <div class="card card-thanks">
+      <img src="/images/illustration-thank-you.svg" alt="" aria-hidden=“true” class="ty">
+      <h2>You selected
+      <span id="rating-box">5</span>
+      out of 5</h2>
+      <h1>Thank you!</h1>
+      <p class="appreciate">We appreciate you taking the time to give a ratiting. If you ever need more suppoert, don`t
+        hesitate to get in touch!</p>
+    </div>
   </main>
-  <script src="/main.js"></script>
+  <script src="/newJs.js"></script>
 </body>
 
 </html>
