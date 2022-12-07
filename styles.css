@@ -10,8 +10,8 @@
     --Orange: hsl(25, 97%, 53%);
     --white: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
-    --Medium-Grey: hsl(216, 12%, 54%);
-    --Dark-Blue: hsl(213, 19%, 18%);
+    --Medium-Grey: rgb(124, 135, 152);
+    --Dark-Blue: rgb(37, 45, 55);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
     --Gradient1: rgb(33, 40, 50);
     --Gradient2: rgb(23,30,40);
@@ -75,7 +75,7 @@ p{
    display: none;
 }
 
-.label{
+label{
     display: flex;
     padding: .8rem;
     width: 42px;
@@ -87,24 +87,23 @@ p{
      cursor: pointer;
      justify-content: center;
      align-items: center;
-
-
 }
 
-.label:hover{
+label:hover{
     color: var(--white);
     background-color: var(--Orange);
 }
 
-.label:active {
-    color: var(--white);
-    background-color: var(--Light-Grey);
-}
 
 
 .btn:hover{
     color: var(--Orange);
     background-color: var(--white);
+}
+
+.active{
+    color: white;
+    background-color: lightslategray;
 }
 
 
@@ -163,6 +162,7 @@ h2{
 }
 
 .appreciate{
+
     text-align: center;
    
 }
@@ -174,4 +174,7 @@ h2{
    
 
 }
+
+
+
 
